@@ -30,7 +30,7 @@ public class NoteContent {
 
     public String getDate() {
         Date d = new Date();
-        CharSequence s  = DateFormat.format("M, d, yyyy ", d.getTime());
+        CharSequence s  = DateFormat.format("yyyyy-mm-dd\n hh:mm:ss", d.getTime());
         date= (String) s;
         return date;
     }
